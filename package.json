@@ -1,0 +1,33 @@
+{
+  "name": "blueprint-clock-speed",
+  "version": "1.0.0",
+  "description": "CLI tool to adjust clock speeds on machines in Satisfactory blueprint files",
+  "main": "build/index.js",
+  "bin": {
+    "blueprint-clock-speed": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config=jest.config.json",
+    "start": "node build/index.js"
+  },
+  "keywords": [
+    "satisfactory",
+    "blueprint",
+    "clock-speed",
+    "overclock"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@etothepii/satisfactory-file-parser": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.19.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.8.3"
+  }
+}
